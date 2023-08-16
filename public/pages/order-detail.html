@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shop - admin panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="dashboard.html">Online shop - admin panel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse show" id="navbarBasic">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+              <li class="nav-item">
+                <a class="nav-link"  href="dashboard.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="user.html">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Logout</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header text-bg-danger">
+                        <h3>Order management</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th width="5%">Order <br/> No</th>
+                                    <th width="10%">Order Date</th>
+                                    <th>Order Detail</th>
+                                    <th width="10%">Amount</th>
+                                    <th width="10%">Status</th>
+                                    <th width="10%">Payment <br/> Mode</th>
+                                </tr>
+                            </thead>
+                           <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>24-05-2023</td>
+                                    <td>Ankit Patel <br/>
+                                       105 - Eva surbhi, Opp aksharwadi <br/>
+                                       Waghawadi Road - Bhavnagar <br/>
+                                       Contact No - 9662512857
+                                    </td>
+                                    <td>&#8377; 125000</td>
+                                    <td>Confirmed</td>
+                                    <td>Cash on delivery</td>
+                                    
+                                </tr>
+                           </tbody>
+                        </table>
+                        <h3 class="border-bottom">Order items</h3>
+                        <table class="table table-striped">
+                            <tr>
+                                <thead>
+                                    <tr class="bg-dark">
+                                        <th class="text-white">Sr No</th>
+                                        <th class="text-white">Name</th>
+                                        <th class="text-end text-white">Price</th>
+                                        <th class="text-end text-white">Quantity</th>
+                                        <th class="text-end text-white">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="product.html">Acer Laptop</a></td>
+                                        <td class="text-end">50000</td>
+                                        <td class="text-end">1</td>
+                                        <td class="text-end">50000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="product.html">Washing machine</a></td>
+                                        <td class="text-end">25000</td>
+                                        <td class="text-end">3</td>
+                                        <td class="text-end">75000</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Total</td>
+                                        <td class="text-end">125000</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <a target='_blank' href="print-order.html" class="btn btn-dark w-100">Print</a>
+                                        </td>
+                                        <td colspan="2">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-floating">
+                                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                              <option selected="">Select order status</option>
+                                                              <option value="1">Confirmed</option>
+                                                              <option value="2">Dispatched</option>
+                                                              <option value="3">Received</option>
+                                                              <option value="4">Canceled</option>
+                                                              <option value="5">Return</option>
+                                                            </select>
+                                                            <label for="floatingSelect">Works with selects</label>
+                                                          </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="button" class="btn btn-info w-100">Change order status</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

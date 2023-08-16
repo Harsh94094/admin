@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online shop - admin panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="../fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-light bg-light shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Online shop - admin panel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic"
+        aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarBasic">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="category.html">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="user.html">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Logout</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-12">
+        <div class="card shadow">
+          <div class="card-header text-bg-danger">
+            <div class="row">
+              <div class="col">
+                <h3>Product management</h3>
+              </div>
+              <div class="col text-end">
+                <a class="btn btn-warning" href="insert-product.html">Add product</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th width="5%">id</th>
+                    <th width="10%">Category</th>
+                    <th width="25%">title</th>
+                    <th width="10%">photo</th>
+                    <th width="8%">price</th>
+                    <th width="5%">Stock</th>
+                    <th width="5%">Weight</th>
+                    <th>Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1
+                      <br />
+                      <span class="badge bg-primary">Live</span>
+                    </td>
+                    </td>
+                    <td>
+                      Laptop
+
+                    </td>
+                    <td>
+                      <div>Acer i5 laptop</div>
+                      <div class="row mt-2">
+                        <div class="col-6">
+                          <a href="#" class="btn btn-danger w-100">Delete</a>
+                        </div>
+                        <div class="col-6">
+                          <a href="edit-product.html" class="btn btn-warning w-100">Edit</a>
+                        </div>
+                      </div>
+                    <td>
+                      <a class="image" href="elephant.jpg"><img src="elephant.jpg" class="img-fluid" />
+                      </a>
+                    </td>
+                    <td>85000</td>
+                    <td>10</td>
+                    <td>1 kg</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas unde ipsa, fugiat repudiandae,
+                      dolorem tenetur rerum excepturi quo fugit laudantium exercitationem culpa quisquam? Voluptatum
+                      alias eius doloribus omnis nulla harum?</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.js"></script>
+  <script>
+    $(document).ready(function () {
+      /* This is basic - uses default settings */
+      $(".image").fancybox();
+    });
+  </script>
+</body>
+
+</html>
